@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GProg_NEZLibraryIntegration_JuliaC03052025", "GProg_NEZLibraryIntegration_JuliaC03052025.csproj", "{79D0108B-B00D-471A-9139-AA8870479222}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez.MG38", "Nez-master\Nez.Portable\Nez.MG38.csproj", "{54D32993-F300-44C6-81AF-604A6E841B07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79D0108B-B00D-471A-9139-AA8870479222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D0108B-B00D-471A-9139-AA8870479222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D0108B-B00D-471A-9139-AA8870479222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D0108B-B00D-471A-9139-AA8870479222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D32993-F300-44C6-81AF-604A6E841B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D32993-F300-44C6-81AF-604A6E841B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D32993-F300-44C6-81AF-604A6E841B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D32993-F300-44C6-81AF-604A6E841B07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ADDAD07-812D-4C44-BF9B-BE0DF14CDA7E}
+	EndGlobalSection
+EndGlobal
