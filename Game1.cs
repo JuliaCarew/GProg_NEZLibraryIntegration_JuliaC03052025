@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Nez;
 using Nez.Textures;
+using Nez.Systems;
+using System.Diagnostics;
 
 namespace GProg_NEZLibraryIntegration_JuliaC03052025
 {
@@ -28,6 +30,8 @@ namespace GProg_NEZLibraryIntegration_JuliaC03052025
             Nez.Core.Scene = scene;
 
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            Core.StartCoroutine(MyCoroutine());
         }
 
         protected override void Update(GameTime gameTime)
@@ -35,18 +39,24 @@ namespace GProg_NEZLibraryIntegration_JuliaC03052025
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
-
             base.Update(gameTime);
+        }
+
+        // Added functionality - Coroutine
+        private System.Collections.Generic.IEnumerator<float> MyCoroutine()
+        {
+            while (true)
+            {
+                Debug.WriteLine("Coroutine running...");
+                yield return 1.0f;  
+            }
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
             // draw tilemap
-
             base.Draw(gameTime);
         }
     }
